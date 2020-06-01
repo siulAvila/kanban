@@ -2,14 +2,20 @@
   "name": "kanban",
   "version": "1.0.0",
   "description": "Kanban with vanilla javascript and HTML Drag and Drop API",
-  "main": "index.js",
-  "dependencies": {
+  "main": "src/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start:dev": "npx webpack-dev-server",
+    "build": "npm webpack"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kanban</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title__header">Kanban</h1>
+    </header>
+
+    <main class="board__main">
+      <section class="column__section">
+        <h2 class="title__section">Backlog</h2>
+
+        <div
+          class="column__body"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <div
+            class="card__main"
+            id="drag1"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <h3 class="card__title">texto texto</h3>
+          </div>
+
+          <div
+            class="card__main"
+            id="drag2"
+            style="background-color: red;"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <h3 class="card__title">texto texto</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="column__section">
+        <h2 class="title__section">Doing</h2>
+        <div
+          class="column__body"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+      </section>
+
+      <section class="column__section">
+        <h2 class="title__section">Done</h2>
+
+        <div
+          class="column__body"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
